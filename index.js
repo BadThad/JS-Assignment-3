@@ -3,13 +3,16 @@ let password = prompt("Enter password");
 
 function isValidPassword(username, password) {
     if (password.match(username)) {
-        console.log(false)
+        return false
+
     } else if (password.indexOf(" ") >= 0) {
-        console.log(false)
+        return false
+
     } else if (password.length < 8) {
-        console.log(false)
+        return false
+
     } else {
-        console.log(true)
+        return true
     }
 }
 
