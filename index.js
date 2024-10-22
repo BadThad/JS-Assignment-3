@@ -6,6 +6,8 @@ function isValidPassword(username, password) {
         console.log(false)
     } else if (password.indexOf(" ") >= 0) {
         console.log(false)
+    } else if (password.length < 8) {
+        console.log(false)
     } else {
         console.log(true)
     }
